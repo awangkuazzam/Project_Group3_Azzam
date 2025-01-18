@@ -2,14 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
-@st.cache_data
-def load_data():
-    file_path = "dataset.csv"
-    df = pd.read_csv(file_path)
-    return df
-
-df = load_data()
+df = pd.read_csv('modified_dataset.csv')
 
 st.title("Distribution of Cases by Gender & Age Group")
 
