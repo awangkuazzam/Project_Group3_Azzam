@@ -1,5 +1,8 @@
 import streamlit as st
 import pandas as pd
+import os
+st.write("Current working directory:", os.getcwd())  # Print the current working directory
+df = pd.read_csv('modified_dataset.csv')  # Ensure file is in the correct folder relative to the script
 
 st.set_page_config(page_title="Covid-19 Cases: Team Presentation", page_icon="🦠")
 
