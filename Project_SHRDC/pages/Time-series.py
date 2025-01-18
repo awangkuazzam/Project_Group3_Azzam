@@ -4,7 +4,7 @@ import plotly.express as px
 
 
 # Pre-load CSV data (replace 'datacovid.csv' with your actual CSV file)
-df = pd.read_csv('modified_dataset.csv')
+df = pd.read_csv('dataset.csv')
 
 # Ensure 'Date Admission' column is in datetime format
 df['ADMISSION DATE'] = pd.to_datetime(df['ADMISSION DATE'])
